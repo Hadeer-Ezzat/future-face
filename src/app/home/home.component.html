@@ -1,0 +1,407 @@
+<!-- Slider Section -->
+<section class="slider position-relative">
+  <div class="container-fluid px-0">
+    <!--Carousel Wrapper-->
+    <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+        <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+      </ol>
+      <!--/.Indicators-->
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+        <!--First slide-->
+        <div class="carousel-item active">
+          <div class="view wow animate__fadeIn" data-wow-duration="1s" data-wow-delay=".1s">
+            <img class="d-block w-100" src="assets/images/img1.jpeg"
+              alt="First slide" height="900">
+          </div>
+          <div class="carousel-caption">
+            <h2 class="text-white mb-3 wow animate__slideInRight" data-wow-duration="2s" data-wow-delay=".2s">مرحب بكم
+            </h2>
+            <h2 class="text-white mb-3 wow animate__slideInRight" data-wow-duration="2s" data-wow-delay=".2s">
+              البوابة الجديدة للهيئة العامة للمنافسة</h2>
+            <span class="text-white fs-20 wow animate__slideInRight" data-wow-duration="2s" data-wow-delay=".2s">
+              حارسك الأمين لاستثماراتك</span>
+            <div class="text-center wow animate__fadeInDown" data-wow-duration="2s" data-wow-delay=".2s">
+              <button class="btn read-more text-center">
+                <span>اقرأ المزيد</span>
+                <i class="icon-arrow"></i>
+              </button>
+            </div>
+            <a href="#" class="twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <!--/First slide-->
+        <!--Second slide-->
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/images/img2.jpeg"
+            alt="Second slide" height="900">
+        </div>
+        <!--/Second slide-->
+        <!--Third slide-->
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/images/img3.jpeg"
+            alt="Third slide" height="900">
+        </div>
+        <!--/Third slide-->
+      </div>
+      <!--/.Slides-->
+      <!--Controls-->
+      <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+        <span class="icon-arrow position-relative" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+        <span class="icon-arrow position-relative" aria-hidden="true"></span>
+      </a>
+      <!--/.Controls-->
+    </div>
+    <!--/.Carousel Wrapper-->
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="services">
+  <div class="container bg-white pt-5 px-4 wow animate__fadeInLeft" data-wow-duration="3s" data-wow-delay=".3s">
+    <div class="row mx-0">
+      <div class="col-lg-4 col-md-6 col-12 wow animate__fadeInRight" data-wow-duration="4s" data-wow-delay=".4s">
+        <h3 class="services-title">خدمات الهيئة</h3>
+        <p class="services-text">انسجاما مع سياسة المملكة الاقتصادية القائمة على مبدأ المنافسة. بسبب التطورات الكبيرة التي تحدث في المجال الاقتصادي ؛ ومن أجل تعزيز مناخ المنافسة في قطاع الأعمال ،
+        </p>
+        <h4 class="show-more"><span class="d-block">استعراض</span><span class="d-block more">المزيد</span></h4>
+        <button class="btn read-more">
+          <span>شاهد المزيد</span>
+          <i class="icon-arrow"></i>
+        </button>
+      </div>
+      <div class="col-lg-8 col-md-6 col-12">
+        <ngx-slick-carousel class="carousel services-slick"
+                           #slickModal="slick-carousel"
+                           [config]="slideConfig" style="margin-left: -6em;">
+            <div ngxSlickItem class="slide position-relative">
+             <img src="assets/images/img_3.png" class="px-4" alt="" width="260" height="400">
+              <div class="service position-absolute text-white">
+               <h4><span class="d-block">التركز</span><span class="d-block">الاقتصادى</span></h4>
+             </div>
+           </div>
+           <div ngxSlickItem class="slide position-relative">
+             <img src="assets/images/img_1.png" class="px-4" alt="" width="260" height="400">
+            <div class="service position-absolute text-white">
+               <h4><span class="d-block">التشريعات</span></h4>
+             </div>
+           </div>
+           <div ngxSlickItem class="slide position-relative">
+             <img src="assets/images/img_2.png" class="px-4" alt="" width="260" height="400">
+             <div class="service position-absolute text-white">
+               <h4><span class="d-block">شكاوى</span><span class="d-block">ومبادرات</span></h4>
+             </div>
+           </div>
+           <div ngxSlickItem class="slide position-relative">
+             <img src="assets/images/img_3.png" class="px-4" alt="" width="260" height="400">
+              <div class="service position-absolute text-white">
+               <h4><span class="d-block">التركز</span><span class="d-block">الاقتصادى</span></h4>
+             </div>
+           </div>
+
+       </ngx-slick-carousel>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modern Operations -->
+<section class="operations px-4 py-5 wow animate__fadeInDown" data-wow-duration="4s" data-wow-delay=".4s">
+  <div class="row mx-0 py-4">
+    <div class="col-lg-3 col-md-6 col-12">
+        <h1 class="services-title pt-5">
+          <span class="d-block">أحدث</span>
+          <span>عمليات</span>
+        </h1>
+        <h1 class="services-title text-white">
+          <span class="d-block">التركز</span>
+          <span class="d-block economy">الاقتصادي</span>
+        </h1>
+        <button class="btn read-more mt-3">
+          <span>اقرأ المزيد</span>
+          <i class="icon-arrow"></i>
+        </button>
+    </div>
+    <div class="col-lg-9 col-md-6 col-12">
+      <ngx-slick-carousel class="carousel"
+                           #slickModal="slick-carousel"
+                           [config]="slideConfig1">
+            <div ngxSlickItem class="slide p-4 pb-5 mx-3">
+             <img src="assets/images/icon.png" alt="" class="pb-2" width="45">
+              <span class="text-white date font-weight-bold">18 June, 2019</span>
+              <p class="text-white py-3 fs-18">تعلن الهيئة العامة للمنافسة عدم اعتراضها على استكمال عملية التركز الاقتصادي بين</p>
+              <div class="operation-item py-3">
+                <i class="icon-arrow fs-12"></i>
+                <span class="px-2 fs-18">أبو ظبي التنموية القابضة</span>
+              </div>
+              <div class="operation-item pb-3">
+                <i class="icon-arrow fs-12"></i>
+                <span class="px-2 fs-18">نبيل للأغذية (القابضة) المحدودة</span>
+              </div>
+           </div>
+           <div ngxSlickItem class="slide p-4 pb-5 mx-3">
+             <img src="assets/images/icon.png" alt="" class="pb-2" width="45">
+              <span class="text-white date font-weight-bold">18 June, 2019</span>
+              <p class="text-white py-3 fs-18">تعلن الهيئة العامة للمنافسة عدم اعتراضها على استكمال عملية التركز الاقتصادي بين</p>
+              <div class="operation-item py-3">
+                <i class="icon-arrow fs-12"></i>
+                <span class="px-2 fs-18">أبو ظبي التنموية القابضة</span>
+              </div>
+              <div class="operation-item pb-3">
+                <i class="icon-arrow fs-12"></i>
+                <span class="px-2 fs-18">نبيل للأغذية (القابضة) المحدودة</span>
+              </div>
+           </div>
+           <div ngxSlickItem class="slide p-4 pb-5 mx-3">
+             <img src="assets/images/icon.png" alt="" class="pb-2" width="45">
+              <span class="text-white date font-weight-bold">18 June, 2019</span>
+              <p class="text-white py-3 fs-18">تعلن الهيئة العامة للمنافسة عدم اعتراضها على استكمال عملية التركز الاقتصادي بين</p>
+              <div class="operation-item py-3">
+                <i class="icon-arrow fs-12"></i>
+                <span class="px-2 fs-18">أبو ظبي التنموية القابضة</span>
+              </div>
+              <div class="operation-item pb-3">
+                <i class="icon-arrow fs-12"></i>
+                <span class="px-2 fs-18">نبيل للأغذية (القابضة) المحدودة</span>
+              </div>
+           </div>
+       </ngx-slick-carousel>
+    </div>
+  </div>
+</section>
+
+<!-- Competition Culture -->
+<section class="culture">
+  <div class="container">
+    <div class="row mx-0">
+      <div class="col-lg-3 col-md-6 col-12 culture-col pt-5">
+        <h1 class="culture-title mb-3 wow animate__backInDown" data-wow-duration="4s" data-wow-delay=".4s">
+          <span class="d-block">ثقافة</span>
+          <span class="d-block">المنافسة</span>
+        </h1>
+        <p class="culture-text pl-4 pt-3  wow animate__fadeInRight" data-wow-duration="4s" data-wow-delay=".4s">انسجاما مع سياسة المملكة الاقتصادية القائمة على مبدأ المنافسة.
+           بسبب التطورات الكبيرة التي تحدث في المجال الاقتصادي ؛ ومن أجل تعزيز مناخ المنافسة في قطاع الأعمال </p>
+        <img src="assets/images/line1.png" class="position-absolute" width="340" alt="" style="bottom: -2.5em;">
+      </div>
+      <div class="col-lg-9 col-md-6 col-12 video-col">
+        <div class="culture-video  wow animate__fadeInLeft" data-wow-duration="4s" data-wow-delay=".4s">
+          <img src="assets/images/video.jpg" alt="" class="w-100 position-relative" height="500">
+          <h1 class="important-info wow animate__backInDown" data-wow-duration="4s" data-wow-delay=".4s">
+            <span class="d-block">معلومات</span>
+            <span style="margin-right: 1em;">هامة</span>
+          </h1>
+          <div id="video">
+            <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+            <video id="culture-video" src="assets/images/FutureFace-Company.mp4" controls></video>
+          </div>
+          <div id="fade" onClick="lightbox_close();"></div>
+          <div class="video-play">
+            <a class="fa fa-play-circle text-white" onclick="lightbox_open();"></a>
+          </div>
+        </div>
+      </div>
+      <div class="mx-auto mt-3 wow animate__fadeInUp" data-wow-duration="4s" data-wow-delay=".4s">
+        <button class="btn read-more">
+          <span>اقرأ المزيد</span>
+          <i class="icon-arrow"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- latest statistcis -->
+<section class="statistcis">
+  <div class="container">
+    <h1 class="statistcis-title wow animate__fadeInDown" data-wow-duration="5s" data-wow-delay=".5s">
+      <span class="d-block">أحدث</span>
+      <span>الإحصائيات</span>
+    </h1>
+    <div class="row mx-0 statistcis-counter p-5 wow animate__fadeInUp" data-wow-duration="5s" data-wow-delay=".5s">
+      <img src="assets/images/line.png" class="position-absolute" width="340" alt="">
+      <div class="col-lg-3 col-md-6 col-12 my-4 wow animate__zoomIn" data-wow-duration="5s" data-wow-delay=".5s">
+        <p class="counter-count position-relative">4100</p>
+        <img src="assets/images/shape.png" class="shapa-img" alt="">
+        <p class="text-center pt-3">
+          <span class="d-block">شكاوى</span>
+          <span>ومبادرات</span>
+        </p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12 my-4 wow animate__zoomIn" data-wow-duration="5s" data-wow-delay=".5s">
+        <p class="counter-count position-relative" style="background: rgba(255, 255, 255, 0.1);">2350</p>
+        <img src="assets/images/shape.png" class="shapa-img" alt="">
+        <p class="text-center pt-3">
+          <span class="d-block">منشأة</span>
+          <span>مدعى عليها</span>
+        </p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12 my-4 wow animate__zoomIn" data-wow-duration="5s" data-wow-delay=".5s">
+        <p class="counter-count position-relative">6520</p>
+        <img src="assets/images/shape.png" class="shapa-img" alt="">
+        <p class="text-center pt-3">
+          <span class="d-block">التركز</span>
+          <span>الاقتصادي</span>
+        </p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12 my-4 wow animate__zoomIn" data-wow-duration="5s" data-wow-delay=".5s">
+        <p class="counter-count position-relative">13.582</p>
+        <img src="assets/images/shape.png" class="shapa-img" alt="">
+        <p class="text-center pt-3">
+          <span class="d-block">غرامات</span>
+          <span>بالمليون</span>
+        </p>
+      </div>
+      <div class="mx-auto mt-3">
+        <button class="btn read-more">
+          <span>اقرأ المزيد</span>
+          <i class="icon-arrow"></i>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- History of Authority -->
+<section class="history">
+  <div class="container">
+    <h1 class="history-title wow animate__backInDown" data-wow-duration="6s" data-wow-delay=".6s">
+      <span class="d-block">أبرز الأحداث</span>
+      <span>في تاريخ الهيئة</span>
+    </h1>
+    <div class="row mx-0 position-relative wow animate__zoomIn" data-wow-duration="6s" data-wow-delay=".6s">
+      <img src="assets/images/long-path.png" class="position-absolute long-line" width="1100" style="top: 4em;" alt="">
+      <div class="col-3 history-date">
+        <p class="mb-0 date">1441</p>
+        <div class="circle position-relative" onclick="date_details();">
+          <img src="assets/images/small-line.png" class="position-absolute" width="50"
+          style="top: -1em; right: -1em;" alt="">
+        </div>
+        <div class="active-date-details p-4">
+          <span class="arrow-up"></span>
+          <p>إصدار اللائحة التنفيذية لنظام المنافسة</p>
+          <p>إنفاذاً للمادة (27) من نظام المنافسة الصادر بالمرسوم الملكي رقم (م/75) وتـاريخ 1440/6/29هـ، أصدر مجلس إدارة الهيئة العامة للمنافسة قراره رقم (337) وتاريخ 1441/1/25هـ بالموافقة على اللائحة التنفيذية لنظام المنافسة.</p>
+        </div>
+      </div>
+      <div class="col-3 history-date">
+        <p class="mb-0 date">1440</p>
+        <div class="circle position-relative">
+          <img src="assets/images/small-line.png" class="position-absolute" width="50"
+          style="top: -1em; right: -1em;" alt="">
+        </div>
+        <div class="active-date-details p-4">
+          <span class="arrow-up"></span>
+          <p>إصدار اللائحة التنفيذية لنظام المنافسة</p>
+          <p>إنفاذاً للمادة (27) من نظام المنافسة الصادر بالمرسوم الملكي رقم (م/75) وتـاريخ 1440/6/29هـ، أصدر مجلس إدارة الهيئة العامة للمنافسة قراره رقم (337) وتاريخ 1441/1/25هـ بالموافقة على اللائحة التنفيذية لنظام المنافسة.</p>
+        </div>
+      </div>
+      <div class="col-3 history-date">
+        <p class="mb-0 date">1439</p>
+        <div class="circle position-relative">
+          <img src="assets/images/small-line.png" class="position-absolute" width="50"
+          style="top: -1em; right: -1em;" alt="">
+        </div>
+        <div class="active-date-details p-4">
+          <span class="arrow-up"></span>
+          <p>إصدار اللائحة التنفيذية لنظام المنافسة</p>
+          <p>إنفاذاً للمادة (27) من نظام المنافسة الصادر بالمرسوم الملكي رقم (م/75) وتـاريخ 1440/6/29هـ، أصدر مجلس إدارة الهيئة العامة للمنافسة قراره رقم (337) وتاريخ 1441/1/25هـ بالموافقة على اللائحة التنفيذية لنظام المنافسة.</p>
+        </div>
+      </div>
+      <div class="col-3 history-date">
+        <p class="mb-0 date">1425</p>
+        <div class="circle position-relative">
+          <img src="assets/images/small-line.png" class="position-absolute" width="50"
+          style="top: -1em; right: -1em;" alt="">
+        </div>
+        <div class="active-date-details p-4">
+          <span class="arrow-up"></span>
+          <p>إصدار اللائحة التنفيذية لنظام المنافسة</p>
+          <p>إنفاذاً للمادة (27) من نظام المنافسة الصادر بالمرسوم الملكي رقم (م/75) وتـاريخ 1440/6/29هـ، أصدر مجلس إدارة الهيئة العامة للمنافسة قراره رقم (337) وتاريخ 1441/1/25هـ بالموافقة على اللائحة التنفيذية لنظام المنافسة.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Read More -->
+<section class="read">
+  <div class="container py-5">
+    <h1 class="read-title wow animate__backInDown" data-wow-duration="6s" data-wow-delay=".6s">
+      اقرأ المزيد
+    </h1>
+    <div class="row mx-0">
+      <div class="col-lg-6 col-12">
+        <div class="media my-4 wow animate__fadeInRight" data-wow-duration="6s" data-wow-delay=".6s">
+          <div class="icon">
+            <i class="icon-chart-bars"></i>
+          </div>
+          <div class="media-body px-3">
+            <h5 class="mt-0 font-weight-bold">الاحصائيات</h5>
+            <p class="fs-14">يساعد دعم الشركات الصغيرة والمتوسطة (SMEs) على توفير سلع وخدمات متنوعة بجودة عالية وأسعار تنافسية.
+               كما أنه يشجع على الإبداع</p>
+            <button class="btn read-more">
+              <span>اقرأ المزيد</span>
+              <i class="icon-arrow"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="media my-4 wow animate__fadeInLeft" data-wow-duration="6s" data-wow-delay=".6s">
+          <div class="icon">
+            <i class="icon-file"></i>
+          </div>
+          <div class="media-body px-3">
+            <h5 class="mt-0 font-weight-bold">نظام الهيئة</h5>
+            <p class="fs-14">يساعد دعم الشركات الصغيرة والمتوسطة (SMEs) على توفير سلع وخدمات متنوعة بجودة عالية وأسعار تنافسية.
+               كما أنه يشجع على الإبداع</p>
+            <button class="btn read-more">
+              <span>اقرأ المزيد</span>
+              <i class="icon-arrow"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="media my-4 wow animate__fadeInRight" data-wow-duration="6s" data-wow-delay=".6s">
+          <div class="media-body px-3">
+            <h5 class="mt-0 font-weight-bold">حملات التوعية</h5>
+            <p class="fs-14">يساعد دعم الشركات الصغيرة والمتوسطة (SMEs) على توفير سلع وخدمات متنوعة بجودة عالية وأسعار تنافسية.
+               كما أنه يشجع على الإبداع</p>
+            <button class="btn read-more">
+              <span>اقرأ المزيد</span>
+              <i class="icon-arrow"></i>
+            </button>
+          </div>
+          <div class="icon">
+            <i class="icon-Initiatives"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="media my-4 wow animate__fadeInLeft" data-wow-duration="6s" data-wow-delay=".6s">
+          <div class="media-body px-3">
+            <h5 class="mt-0 font-weight-bold">التقارير السنوية</h5>
+            <p class="fs-14">يساعد دعم الشركات الصغيرة والمتوسطة (SMEs) على توفير سلع وخدمات متنوعة بجودة عالية وأسعار تنافسية.
+               كما أنه يشجع على الإبداع</p>
+            <button class="btn read-more">
+              <span>اقرأ المزيد</span>
+              <i class="icon-arrow"></i>
+            </button>
+          </div>
+          <div class="icon">
+            <i class="icon-graph-file"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

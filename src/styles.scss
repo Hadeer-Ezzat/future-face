@@ -1,1 +1,221 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/scss/bootstrap";
+@import "~font-awesome/css/font-awesome.min.css";
+
+// Variables
+$primary-color: #FAC126;
+$black-color: #4D4D4D;
+$gray-color: #676767;
+$secondary-color: #5F9600;
+$section-padding: 80px;
+
+// Global Styles
+html,
+body {
+  direction: rtl;
+  text-align: right;
+  height: 100%;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.breadcrumb,
+.navigation,
+.btn,
+.ui-widget {
+  font-family: "GE SS Two";
+}
+
+.fs-8 {
+  font-size: 8px;
+}
+
+.fs-9 {
+  font-size: 9px;
+}
+
+.fs-10 {
+  font-size: 10px;
+}
+
+.fs-11 {
+  font-size: 11px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.read-btn {
+  border: 1px solid $primary-color;
+  border-radius: 20px;
+  padding: 6px 28px;
+  position: relative;
+
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-radius: 20px;
+    transform: translate(-101%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: $primary-color;
+    transition: transform 0.25s cubic-bezier(.7, 0, .9, 1);
+    opacity: 0;
+  }
+
+  span {
+    // color: #fff;
+    position: relative;
+    z-index: 1;
+    transition: color 0.25s cubic-bezier(.7, 0, .9, 1);
+  }
+
+  &:hover::before {
+    transform: translate(0, -50%);
+    opacity: 1;
+  }
+
+  &:hover span {
+    color: #fff;
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+.slick-prev,
+.slick-next {
+  bottom: -22% !important;
+  top: auto !important;
+}
+
+.slick-prev {
+  left: 40% !important;
+  border: 2px solid #fff !important;
+  border-radius: 20px;
+  width: 40px !important;
+  height: 40px !important;
+
+  &::before {
+    content: "\e900" !important;
+    font-family: 'icomoon' !important;
+    opacity: 1 !important;
+    position: absolute;
+    top: 8px;
+  }
+}
+
+.slick-next {
+  right: 50% !important;
+  border: 2px solid #fff !important;
+  border-radius: 20px;
+  width: 40px !important;
+  height: 40px !important;
+
+  &::before {
+    content: "\e900" !important;
+    font-family: 'icomoon' !important;
+    opacity: 1 !important;
+    position: absolute;
+    top: 8px;
+    transform: rotate(180deg);
+    right: -45px;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .read-btn::before{
+    display: none;
+  }
+}
